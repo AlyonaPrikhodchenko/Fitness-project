@@ -18,7 +18,7 @@
 }
 
 .rouble {
-  font-family: $ff-rouble;
+  // font-family: $ff-rouble;
   /* stylelint-disable */
   text-transform: lowercase !important;
   font-weight: 400 !important;
@@ -64,4 +64,10 @@
 .no-transition {
   /* stylelint-disable-next-line */
   transition: none !important;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

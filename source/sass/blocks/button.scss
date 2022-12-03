@@ -1,0 +1,10 @@
+.button {
+  padding: 15px;
+  text-decoration: none;
+  border: 4px solid $color-light-text;
+  cursor: pointer;
+
+  @include fontRoboto(700, 12px, 14px, $color-light-text);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
