@@ -1,0 +1,57 @@
+.intro {
+  display: grid;
+  grid-template-columns: auto 500px;
+  padding-right: 200px;
+}
+
+.intro__content {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  max-width: 397px;
+  margin-top: 104px;
+  margin-right: 63px;
+}
+
+.intro__list {
+  position: relative;
+  left: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+}
+
+.intro__item {
+  @include fontRoboto(400, 14px, 21px, $color-light-text);
+}
+
+.intro__text span {
+  display: block;
+  text-align: right;
+  margin-right: 55px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @include fontAlumni(600, 42px, 58px, $color-light-text);
+}
+
+.intro__text h1 {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: right;
+  letter-spacing: 0.05em;
+
+  @include fontAlumni(600, 92px, 110px, $color-light-text);
+}
+
+.intro__button {
+  width: 234px;
+  padding: 19px 15px;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.intro__image {
+  margin-top: -10px;
+}
+

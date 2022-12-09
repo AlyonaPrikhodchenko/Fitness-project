@@ -10,6 +10,44 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="header">
+        <div class="header__menu container">
+          <div class="header__logo logo">
+            <a>
+              <img class="logo__img" src="./img/content/logo.svg" width="122" height="44" alt="Логотип сайта Supergym.">
+            </a>
+          </div>
+
+          <a class="header__tel"href="tel:+78005555555">8-800-555-55-55</a>
+        </div>
+        <div class="header__intro intro container">
+          <div class="intro__content">
+            <ul class="intro__list reset-list">
+              <li class="intro__item">Тренажёрный зал</li>
+              <li class="intro__item">Групповые занятия</li>
+              <li class="intro__item">Кардио-зона</li>
+            </ul>
+
+            <div class="intro__text">
+              <span>Омск</span>
+              <h1>ФИТНЕС ЦЕНТР</h1>
+              <a class="intro__button button" href="#subscription">Купить абонемент</a>
+            </div>
+          </div>
+          <div class="intro__image">
+            <picture>
+              <source type="image/webp" srcset="./img/content/intro-man.webp 1x, ./img/content/intro-man@2x.webp 2x">
+              <img class="intro__img" src="./img/content/intro-man.jpg" srcset="./img/content/intro-man@2x.jpg 2x" width="500" height="556" loading="lazy" alt="Тренер нашего спортзала.">
+            </picture>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="main__subscription subscription" id="subscription">
+          Абонементы
+        </section>
+      </main>
     </div>
 
     <script src="js/vendor.min.js"></script>
