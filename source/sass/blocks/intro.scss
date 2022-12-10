@@ -1,57 +1,153 @@
 .intro {
+  position: relative;
+  z-index: -1;
   display: grid;
-  grid-template-columns: auto 500px;
-  padding-right: 200px;
+  grid-template-columns: 397px auto;
+  gap: 63px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 324px auto;
+    gap: 30px;
+  }
+
+  @media (max-width: $tel) {
+    grid-template-columns: auto;
+    gap: 0;
+  }
 }
 
 .intro__content {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  max-width: 397px;
-  margin-top: 104px;
-  margin-right: 63px;
+  margin-top: 105px;
+
+  @media (max-width: $tablet) {
+    margin-top: 50px;
+  }
+}
+
+.intro__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $tel) {
+    margin-bottom: 22px;
+  }
 }
 
 .intro__list {
-  position: relative;
-  left: 18px;
   margin-top: auto;
-  margin-bottom: auto;
-  text-align: right;
+  margin-bottom: 35px;
+  margin-left: auto;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tel) {
+    position: absolute;
+    bottom: 97px;
+  }
 }
 
 .intro__item {
+  text-align: right;
+
   @include fontRoboto(400, 14px, 21px, $color-light-text);
 }
 
-.intro__text span {
-  display: block;
+.intro__text {
+  max-width: 266px;
   text-align: right;
-  margin-right: 55px;
-  margin-bottom: 10px;
+
+  @media (max-width: $tablet) {
+    max-width: 210px;
+  }
+
+  @media (max-width: $tel) {
+    margin-left: auto;
+  }
+}
+
+.intro__text span {
+  display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  padding-right: 56px;
+  margin-bottom: 10px;
 
   @include fontAlumni(600, 42px, 58px, $color-light-text);
+
+  @media (max-width: $tablet) {
+    padding-right: 7px;
+    margin-bottom: 7px;
+
+    @include fontAlumni(600, 28px, 41px, $color-light-text);
+  }
+
+  @media (max-width: $tel) {
+    margin-bottom: 15px;
+
+    @include fontAlumni(600, 24px, 33px, $color-light-text);
+  }
 }
 
 .intro__text h1 {
   margin: 0;
-  margin-bottom: 50px;
-  text-align: right;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
 
   @include fontAlumni(600, 92px, 110px, $color-light-text);
+
+  @media (max-width: $tablet) {
+    text-transform: none;
+
+    @include fontAlumni(600, 72px, 86px, $color-light-text);
+  }
+
+  @media (max-width: $tablet) {
+    text-transform: none;
+
+    @include fontAlumni(700, 72px, 86px, $color-light-text);
+  }
 }
 
 .intro__button {
   width: 234px;
-  padding: 19px 15px;
-  margin-top: auto;
   margin-left: auto;
+  padding: 19px 15px 20px;
+
+  @media (max-width: $tablet) {
+    width: 185px;
+  }
+
+  @media (max-width: $tel) {
+    width: 100%;
+    padding: 19px 15px 22px;
+  }
 }
 
 .intro__image {
-  margin-top: -10px;
+  @media (max-width: $tablet) {
+    margin-left: auto;
+  }
+
+  @media (max-width: $tel) {
+    display: none;
+  }
 }
 
+.intro__img {
+  object-fit: cover;
+  margin-top: -10px;
+
+  @media (max-width: $tablet) {
+    width: 324px;
+    height: 390px;
+    margin-top: 0;
+  }
+}

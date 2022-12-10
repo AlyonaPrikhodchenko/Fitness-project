@@ -1,8 +1,22 @@
 .logo {
   display: flex;
   padding-top: 7px;
+
+  @media (max-width: $tel) {
+    padding-top: 0;
+  }
 }
 
 .logo__img {
   display: block;
+
+  @media (max-width: $tablet) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $tel) {
+    width: 69px;
+    height: 24px;
+  }
 }

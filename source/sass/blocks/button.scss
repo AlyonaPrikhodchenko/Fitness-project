@@ -10,4 +10,17 @@
   @include fontRoboto(700, 12px, 14px, $color-light-text);
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  &:focus {
+    outline-offset: 2px;
+    outline: 1px solid $color-accent;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
