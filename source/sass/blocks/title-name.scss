@@ -1,0 +1,6 @@
+.title-name {
+  margin: 0;
+  letter-spacing: 0.03em;
+
+  @include fontAlumni(600, 54px, 65px, $color-dark-text);
+}

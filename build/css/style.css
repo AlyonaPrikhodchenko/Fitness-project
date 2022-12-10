@@ -664,7 +664,7 @@ button,
   text-transform: uppercase;
 }
 
-.button:focus {
+.button:focus-visible {
   outline-offset: 2px;
   outline: 1px solid #ed0233;
 }
@@ -703,7 +703,7 @@ button,
   color: #ffffff;
 }
 
-.header__tel:focus {
+.header__tel:focus-visible {
   outline-offset: 2px;
   outline: 1px solid #ed0233;
 }
@@ -811,6 +811,153 @@ button,
   margin-top: -10px;
 }
 
+.gym {
+  padding: 120px 0;
+}
+
+.gym__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 410px auto;
+  grid-template-columns: 410px auto;
+  gap: 27px;
+}
+
+.gym__content {
+  margin-top: 38px;
+  margin-left: 60px;
+}
+
+.gym__content h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 58px;
+  color: #102654;
+}
+
+.gym__subtitle {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+  color: #102654;
+}
+
+.gym__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+  color: #102654;
+}
+
+.gym__text--hidden {
+  margin-bottom: 0;
+}
+
+.gym__gallery {
+  height: 100%;
+}
+
+.gym__img {
+  margin-left: auto;
+}
+
+.gym__video {
+  margin-top: -114px;
+}
+
+.video {
+  position: relative;
+  width: 364px;
+  height: 228px;
+  background-color: #102654;
+}
+
+.video--enabled .video__button {
+  display: block;
+}
+
+.video__link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.video__link::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.video__link[href]:focus-visible {
+  outline-offset: 2px;
+  outline: 1px solid #ed0233;
+}
+
+.video__link[href]:hover {
+  opacity: 0.8;
+}
+
+.video__link[href]:active {
+  opacity: 0.5;
+}
+
+.video__media {
+  width: 100%;
+  height: 228px;
+  border: none;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.video__button:focus-visible {
+  outline-offset: 2px;
+  outline: 1px solid #ed0233;
+}
+
+.video__button:hover {
+  opacity: 0.8;
+}
+
+.video__button:active {
+  opacity: 0.5;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 88.28%;
@@ -907,6 +1054,66 @@ button,
     height: 390px;
     margin-top: 0;
   }
+
+  .gym {
+    padding: 100px 0;
+  }
+
+  .gym__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .gym__content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .gym__content h2 {
+    margin-bottom: 0;
+    margin-right: 15px;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
+    color: #102654;
+  }
+
+  .gym__subtitle {
+    margin-bottom: 35px;
+  }
+
+  .gym__text {
+    max-width: 502px;
+    margin: 0 auto;
+  }
+
+  .gym__text--hidden {
+    display: none;
+  }
+
+  .gym__img {
+    width: 678px;
+    height: 345px;
+    margin: 0 auto;
+  }
+
+  .gym__video {
+    width: 266px;
+    height: 167px;
+    margin: -84px auto 0;
+  }
+
+  .video__media {
+    height: 167px;
+  }
+
+  .video__button {
+    width: 73px;
+    height: 73px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -975,5 +1182,57 @@ button,
 
   .intro__image {
     display: none;
+  }
+
+  .gym {
+    padding: 65px 0;
+  }
+
+  .gym__container {
+    margin: 0;
+    width: 100%;
+    gap: 32px;
+  }
+
+  .gym__content {
+    min-width: 270px;
+    width: 90.62%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .gym__content h2 {
+    margin-bottom: 5px;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 38px;
+    color: #102654;
+  }
+
+  .gym__subtitle {
+    margin-bottom: 24px;
+  }
+
+  .gym__text {
+    margin: 0;
+    max-width: 90%;
+  }
+
+  .gym__img {
+    width: 100%;
+    height: 313px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 100%;
+    object-position: 100%;
+    margin-bottom: 40px;
+  }
+
+  .gym__video {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
   }
 }

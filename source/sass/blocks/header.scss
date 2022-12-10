@@ -31,7 +31,7 @@
 
   @include fontAlumni(600, 26px, 31px, $color-light-text);
 
-  &:focus {
+  &:focus-visible {
     outline-offset: 2px;
     outline: 1px solid $color-accent;
   }
