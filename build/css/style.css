@@ -436,6 +436,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 html {
@@ -971,8 +972,26 @@ button,
 }
 
 .subscription {
+  position: relative;
+  z-index: 1;
   padding: 120px 0;
   background-color: #f8f9fc;
+}
+
+.subscription::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -90px;
+  right: -110px;
+  width: 321px;
+  height: 384px;
+  background-image: url("../img/background/requisite-gym.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 .subscription__title {
@@ -1364,6 +1383,13 @@ button,
     padding: 100px 0;
   }
 
+  .subscription::before {
+    bottom: -80px;
+    right: -10px;
+    width: 289px;
+    height: 345px;
+  }
+
   .subscription__container {
     width: 57.55%;
   }
@@ -1541,6 +1567,10 @@ button,
 
   .subscription {
     padding: 65px 0 72px;
+  }
+
+  .subscription::before {
+    display: none;
   }
 
   .subscription__title {

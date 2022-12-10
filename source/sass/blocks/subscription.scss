@@ -1,13 +1,40 @@
 .subscription {
+  position: relative;
+  z-index: 1;
   padding: 120px 0;
   background-color: $color-bg-light;
 
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -90px;
+    right: -110px;
+    width: 321px;
+    height: 384px;
+    background-image: url("../img/background/requisite-gym.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(150deg);
+  }
+
   @media (max-width: $tablet) {
     padding: 100px 0;
+
+    &::before {
+      bottom: -80px;
+      right: -10px;
+      width: 289px;
+      height: 345px;
+    }
   }
 
   @media (max-width: $tel) {
     padding: 65px 0 72px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
