@@ -1,0 +1,32 @@
+.subscription {
+  padding: 120px 0;
+  background-color: $color-bg-light;
+
+  @media (max-width: $tablet) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $tel) {
+    padding: 65px 0 72px;
+  }
+}
+
+.subscription__container {
+  @media (max-width: $tablet) {
+    width: 57.55%;
+  }
+}
+
+.subscription__title {
+  margin-bottom: 19px;
+  text-align: center;
+
+  @media (max-width: $tablet) {
+    margin-right: 13px;
+    margin-bottom: 21px;
+  }
+
+  @media (max-width: $tel) {
+    margin-bottom: 20px;
+  }
+}
