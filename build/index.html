@@ -164,7 +164,34 @@
             </div>
           </div>
         </section>
-        <section>Новый блок</section>
+        <section class="main__games games">
+          <div class="games__container container">
+            <div class="games__content">
+              <div class="games__content-wrapper">
+                <h2>Super games</h2>
+                <ul class="games__list reset-list">
+                  <li class="games__item">
+                    <span class="games__name">Дата</span>
+                    <time class="games__date" datetime="2019-03-07">7 <span>Марта 2019</span></time>
+                  </li>
+                  <li class="games__item">
+                    <span class="games__name">Время</span>
+                    <time class="games__date" datetime="2019-03-07T12:00">12:00</time>
+                  </li>
+                </ul>
+              </div>
+              <p class="games__text">Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a href="#" class="games__button button">Заполнить заявку</a>
+            </div>
+
+            <div class="games__image">
+              <picture>
+                <source type="image/webp" srcset="./img/content/competitions.webp 1x, ./img/content/competitions@2x.webp 2x">
+                <img class="games__img" src="./img/content/competitions.jpg" srcset="./img/content/competitions@2x.jpg 2x" width="660" height="500" loading="lazy" alt="Мужчина на соревнованиях.">
+              </picture>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 

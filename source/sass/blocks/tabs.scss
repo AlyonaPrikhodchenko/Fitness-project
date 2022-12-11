@@ -15,7 +15,7 @@
   }
 
   @media (max-width: $tel) {
-    width: 90.6%;
+    width: 100%;
     max-width: 290px;
     margin-bottom: 35px;
     padding-bottom: 12px;
@@ -99,7 +99,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 55px 17px;
+  padding: 55px 17px 61px;
   background-color: $color-light-text;
   border: 7px solid transparent;
 
@@ -143,7 +143,7 @@
 
   @include fontRoboto(700, 26px, 29px, $color-dark-text);
 
-  @media (max-width: $tablet) {
+  @media (max-width: $tel) {
     @include fontRoboto(700, 22px, 24px, $color-dark-text);
   }
 }
