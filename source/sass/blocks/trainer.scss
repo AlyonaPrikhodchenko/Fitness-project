@@ -1,0 +1,118 @@
+.trainer {
+  position: relative;
+  z-index: 0;
+  padding: 91px 0;
+  background-color: $color-light-text;
+
+  @media (max-width: $tablet) {
+    padding: 0 0 100px;
+  }
+
+  @media (max-width: $tel) {
+    padding: 0 0 70px;
+  }
+}
+
+.trainer__title {
+  margin-bottom: 48px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  @media (max-width: $tel) {
+    margin-bottom: 42px;
+  }
+}
+
+.trainer__swiper {
+  position: relative;
+  width: 93.11%;
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 56px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 17px;
+    height: 100%;
+    background-color: $color-light-text;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 17px;
+    height: 100%;
+    background-color: $color-light-text;
+  }
+
+  @media (max-width: $tablet) {
+    width: 88.28%;
+    max-width: 678px;
+    margin: 0 auto;
+    padding: 0 56px;
+
+    &::after {
+      width: 27px;
+    }
+
+    &::before {
+      width: 27px;
+    }
+  }
+
+  @media (max-width: $tel) {
+    width: 90.62%;
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    &::after {
+      width: 10px;
+    }
+
+    &::before {
+      width: 10px;
+    }
+  }
+}
+
+.trainer__swiper-button {
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 32px;
+  padding: 0;
+  z-index: 3;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &--prev {
+    left: 0;
+    top: 52%;
+  }
+
+  &--next {
+    right: 0;
+    top: 52%;
+    transform: rotate(-180deg);
+  }
+
+  @media (max-width: $tel) {
+    width: 10px;
+    height: 19px;
+  }
+}

@@ -1,0 +1,116 @@
+.card-trainer {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  overflow: hidden;
+
+  @media (max-width: $tel) {
+    height: 274px;
+  }
+}
+
+.card-trainer__intro h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include fontRoboto(700, 18px, 27px, $color-light-text);
+}
+
+.card-trainer:focus-within .card-trainer__intro h3,
+.card-trainer:hover .card-trainer__intro h3 {
+  display: none;
+}
+
+.card-trainer:focus-within .card-trainer__image,
+.card-trainer:hover .card-trainer__image {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.card-trainer__image {
+  position: relative;
+  max-height: 294px;
+  overflow: hidden;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 38, 84, 0.2);
+    z-index: 1;
+  }
+}
+
+.card-trainer__img {
+  object-fit: contain;
+  object-position: 5px -20px;
+  transform: scale(1.1);
+}
+
+.card-trainer__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 51px 10px;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.card-trainer__content h3 {
+  margin: 0;
+
+  @include fontRoboto(700, 18px, 27px, $color-light-text);
+}
+
+.card-trainer__category {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 30px;
+
+  @include fontRoboto(400, 16px, 24px, $color-category);
+}
+
+.card-trainer__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 160px;
+}
+
+.card-trainer__item {
+  position: relative;
+  padding-left: 16px;
+
+  @include fontRoboto(400, 14px, 14px, $color-light-text);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $color-light-text;
+  }
+}
+
+.card-trainer:focus-within .card-trainer__content,
+.card-trainer:hover .card-trainer__content {
+  display: flex;
+}
