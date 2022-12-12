@@ -2594,6 +2594,195 @@ button,
   color: #ffffff;
 }
 
+.stocks {
+  padding: 150px 0 110px;
+  background-color: #ffffff;
+}
+
+.stocks__title {
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.stocks__content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 560px 1fr;
+  grid-template-columns: 560px 1fr;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.stocks__unlimited {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 462px;
+}
+
+.stocks__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background-color: #ed0233;
+  padding: 33px 45px 46px;
+}
+
+.stocks__price-wrapper {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.stocks__date {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.stocks__price {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.stocks__text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.stocks__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.stocks__image {
+  width: 280px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.stocks__img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.stocks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.stocks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  padding: 24px 26px 27px;
+  border-width: 7px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%) 1;
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
+}
+
+.stocks__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.stocks__item-title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 26px;
+  color: #1c3374;
+}
+
+.stocks__item-text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  color: #1c3374;
+}
+
+.stocks__item-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #1c3374;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+  color: #1c3374;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 88.28%;
@@ -3041,6 +3230,45 @@ button,
     line-height: 28px;
     color: #ffffff;
   }
+
+  .stocks {
+    padding: 95px 0;
+  }
+
+  .stocks__title {
+    margin-bottom: 40px;
+  }
+
+  .stocks__content-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stocks__image {
+    width: 399px;
+  }
+
+  .stocks__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    min-height: 211px;
+  }
+
+  .stocks__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .stocks__item-text {
+    line-height: 20px;
+  }
+
+  .stocks__item-text--free {
+    max-width: 153px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3395,5 +3623,84 @@ button,
     font-style: normal;
     line-height: 22px;
     color: #ffffff;
+  }
+
+  .stocks {
+    padding: 65px 0;
+  }
+
+  .stocks__title {
+    margin-bottom: 42px;
+  }
+
+  .stocks__unlimited {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .stocks__content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .stocks__price-wrapper {
+    margin-bottom: 13px;
+  }
+
+  .stocks__date {
+    text-align: center;
+  }
+
+  .stocks__price {
+    text-align: center;
+  }
+
+  .stocks__text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .stocks__link {
+    text-align: center;
+  }
+
+  .stocks__image {
+    width: 100%;
+    height: 93.5vw;
+  }
+
+  .stocks__img {
+    -o-object-position: 0 0;
+    object-position: 0 0;
+  }
+
+  .stocks__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .stocks__item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 211px;
+    padding: 35px 35px 39px;
+  }
+
+  .stocks__item-title {
+    text-align: center;
+  }
+
+  .stocks__item-text {
+    text-align: center;
+  }
+
+  .stocks__item-link {
+    text-align: center;
   }
 }
