@@ -15,24 +15,28 @@ new Swiper('#swiperTrainer', {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 22,
+      initialSlide: 2,
     },
 
     320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 22,
+      initialSlide: 2,
     },
 
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 30,
+      initialSlide: 2,
     },
 
     1200: {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 40,
+      initialSlide: 0,
     },
   },
 });
