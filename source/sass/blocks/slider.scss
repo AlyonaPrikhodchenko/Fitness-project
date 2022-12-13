@@ -1,0 +1,171 @@
+.slider {
+  position: relative;
+  z-index: 0;
+  width: 57.93%;
+  margin: 0 auto;
+  padding: 0 56px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+
+  @media (max-width: $tablet) {
+    width: 678px;
+  }
+
+  @media (max-width: $tel) {
+    max-width: 400px;
+    width: 100%;
+    padding: 32px;
+
+    &::before {
+      width: 32px;
+    }
+
+    &::after {
+      width: 32px;
+    }
+  }
+}
+
+.slider__list {
+  position: relative;
+  width: 100%;
+}
+
+.slider__card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+  height: auto;
+  align-content: start;
+  padding: 55px 62px 59px;
+  background-color: $color-accent-dark;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.2);
+
+  @media (max-width: $tel) {
+    padding: 40px 20px 36px;
+    row-gap: 15px;
+  }
+}
+
+.slider__image {
+  padding-top: 7px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  flex-shrink: 0;
+  width: 80px;
+  height: 88px;
+  margin-right: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @media (max-width: $tel) {
+    grid-column: 1/2;
+    grid-row: auto;
+    width: 68px;
+    height: 68px;
+    margin-right: 15px;
+    margin-left: 20px;
+    padding: 0;
+  }
+}
+
+.slider__img {
+  object-fit: cover;
+  object-position: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__author {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+
+  @include fontRoboto(700, 20px, 30px, $color-light-text);
+
+  @media (max-width: $tel) {
+    margin-bottom: 0;
+    margin-top: 7px;
+
+    @include fontRoboto(700, 20px, 26px, $color-light-text);
+  }
+}
+
+.slider__review {
+  margin: 0;
+
+  @include fontRoboto(400, 16px, 22px, $color-light-text);
+
+  @media (max-width: $tel) {
+    grid-column: 1/3;
+    text-align: center;
+    width: 98%;
+
+    @include fontRoboto(400, 16px, 22px, $color-light-text);
+  }
+}
+
+.slider__button {
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 32px;
+  padding: 0;
+  z-index: 6;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &--prev {
+    left: 0;
+    top: 52%;
+  }
+
+  &--next {
+    right: 0;
+    top: 52%;
+    transform: rotate(-180deg);
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 1px solid $color-accent;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tel) {
+    width: 10px;
+    height: 19px;
+  }
+}
+

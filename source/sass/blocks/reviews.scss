@@ -1,0 +1,21 @@
+.reviews {
+  padding: 5px 0 120px;
+  background-color: $color-light-text;
+
+  @media (max-width: $tablet) {
+    padding: 0 0 100px;
+  }
+
+  @media (max-width: $tel) {
+    padding: 0 0 38px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 37px;
+  text-align: center;
+
+  @media (max-width: $tel) {
+    margin-bottom: 9px;
+  }
+}

@@ -40,3 +40,14 @@ new Swiper('#swiperTrainer', {
     },
   },
 });
+
+// eslint-disable-next-line
+new Swiper('#swiperReviews', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  initialSlide: 0,
+});
+
