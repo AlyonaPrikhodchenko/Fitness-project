@@ -1,0 +1,28 @@
+.socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: $color-light-text;
+  border-radius: 50%;
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 1px solid $color-accent;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

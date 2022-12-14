@@ -50,4 +50,3 @@ new Swiper('#swiperReviews', {
 
   initialSlide: 0,
 });
-

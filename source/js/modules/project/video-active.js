@@ -30,4 +30,3 @@ const videoEnabled = () => {
 };
 
 export {videoEnabled};
-

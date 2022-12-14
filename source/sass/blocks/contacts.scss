@@ -63,7 +63,7 @@
 
   @media (max-width: $tablet) {
     border: none;
-    padding: 62px 0 56px 87px;
+    padding: 62px 0 64px 87px;
 
     &::after {
       display: none;
@@ -71,7 +71,7 @@
   }
 
   @media (max-width: $tel) {
-    padding: 65px 0 68px;
+    padding: 65px 0 61px;
   }
 }
 

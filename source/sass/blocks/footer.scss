@@ -1,0 +1,19 @@
+.footer {
+  background-color: $color-bg-dark;
+  padding: 40px 0 45px;
+
+  @media (max-width: $tel) {
+    padding: 45px 0 53px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (max-width: $tel) {
+    flex-direction: column;
+    align-items: start;
+  }
+}

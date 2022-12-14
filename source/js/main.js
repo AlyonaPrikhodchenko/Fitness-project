@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {videoEnabled} from './modules/project/video-active';
 import {activatesTabs} from './modules/project/tabs';
 import {initForm} from './modules/project/validation';
+import {mediaQueries, transferLogo} from './modules/project/transfer-logo';
 
 // ---------------------------------
 
@@ -16,6 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
   if (form) {
     initForm(form);
   }
+
+  mediaQueries.addEventListener('change', transferLogo);
+  transferLogo(mediaQueries);
   // Modules
   // ---------------------------------
 
