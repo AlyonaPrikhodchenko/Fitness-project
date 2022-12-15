@@ -108,6 +108,19 @@
 
   @include fontRoboto(700, 14px, 16px, $color-light-text);
 
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 1px solid $color-accent-dark;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tel) {
     text-align: center;
   }
@@ -223,6 +236,19 @@
   border-bottom: 1px solid $color-accent-dark;
 
   @include fontRoboto(700, 12px, 18px, $color-accent-dark);
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 1px solid $color-accent;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tel) {
     text-align: center;

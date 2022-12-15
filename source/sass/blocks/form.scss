@@ -1,5 +1,5 @@
 .form {
-  padding: 56px 170px 68px 0;
+  padding: 56px 50px 68px 0;
 
   @media (max-width: $tablet) {
     padding: 62px 0 68px 87px;
@@ -33,6 +33,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
   row-gap: 28px;
+  max-width: 410px;
 
   @media (max-width: $tablet) {
     max-width: 472px;

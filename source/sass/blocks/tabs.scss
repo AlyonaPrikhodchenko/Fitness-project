@@ -140,6 +140,7 @@
 .tabs__title {
   margin: 0;
   margin-bottom: 10px;
+  text-align: center;
 
   @include fontRoboto(700, 26px, 29px, $color-dark-text);
 
@@ -153,6 +154,7 @@
   vertical-align: middle;
   margin: 0;
   margin-bottom: 65px;
+  text-align: center;
 
   @include fontRoboto(400, 16px, 24px, $color-dark-text);
 
@@ -169,6 +171,7 @@
   align-items: center;
   margin: 0;
   margin-bottom: 35px;
+  text-align: center;
 
   @include fontRoboto(700, 60px, 90px, $color-price);
 

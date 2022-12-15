@@ -1,6 +1,10 @@
 .footer {
   background-color: $color-bg-dark;
-  padding: 40px 0 45px;
+  padding: 40px 0 36px;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0 45px;
+  }
 
   @media (max-width: $tel) {
     padding: 45px 0 53px;

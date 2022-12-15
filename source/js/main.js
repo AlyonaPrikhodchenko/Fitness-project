@@ -4,11 +4,14 @@ import {videoEnabled} from './modules/project/video-active';
 import {activatesTabs} from './modules/project/tabs';
 import {initForm} from './modules/project/validation';
 import {mediaQueries, transferLogo} from './modules/project/transfer-logo';
+import {initSwiperTrainer} from './modules/project/swiper-trainer';
+import {initSwiperReviews} from './modules/project/swiper-reviews';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.form');
+  const swiper = document.querySelector('.swiper');
   // Utils
   // ---------------------------------
 
@@ -17,6 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
   if (form) {
     initForm(form);
   }
+
+  initSwiperTrainer(swiper);
+  initSwiperReviews(swiper);
 
   mediaQueries.addEventListener('change', transferLogo);
   transferLogo(mediaQueries);
