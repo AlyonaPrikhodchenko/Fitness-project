@@ -49,7 +49,7 @@
   }
 }
 
-.card-trainer__img {
+.card-trainer__image img {
   object-fit: cover;
   width: 100%;
   height: 22vw;
@@ -87,7 +87,7 @@
   @include fontRoboto(700, 18px, 27px, $color-light-text);
 }
 
-.card-trainer__category {
+.card-trainer__content span {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 30px;
@@ -102,7 +102,7 @@
   max-width: 160px;
 }
 
-.card-trainer__item {
+.card-trainer__list li {
   position: relative;
   padding-left: 16px;
 

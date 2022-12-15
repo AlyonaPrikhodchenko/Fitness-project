@@ -149,7 +149,7 @@
   }
 }
 
-.tabs__number {
+.tabs__card span {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
@@ -163,7 +163,7 @@
   }
 }
 
-.tabs__price {
+.tabs__card b {
   position: relative;
   z-index: 1;
   display: flex;

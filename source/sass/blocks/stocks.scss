@@ -68,7 +68,7 @@
   }
 }
 
-.stocks__date {
+.stocks__price-wrapper dt {
   @include fontRoboto(700, 28px, 40px, $color-light-text);
 
   @media (max-width: $tel) {
@@ -76,7 +76,7 @@
   }
 }
 
-.stocks__price {
+.stocks__price-wrapper dd {
   margin: 0;
 
   @include fontRoboto(700, 70px, 70px, $color-light-text);
@@ -86,7 +86,7 @@
   }
 }
 
-.stocks__text {
+.stocks__content p {
   margin: 0;
   margin-bottom: 15px;
 
@@ -140,7 +140,7 @@
   }
 }
 
-.stocks__img {
+.stocks__image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -197,7 +197,7 @@
   }
 }
 
-.stocks__item-title {
+.stocks__item h3 {
   margin: 0;
   margin-bottom: 13px;
 
@@ -208,7 +208,7 @@
   }
 }
 
-.stocks__item-text {
+.stocks__item p {
   margin: 0;
   margin-bottom: 15px;
 
@@ -216,14 +216,16 @@
 
   @media (max-width: $tablet) {
     line-height: 20px;
-
-    &--free {
-      max-width: 153px;
-    }
   }
 
   @media (max-width: $tel) {
     text-align: center;
+  }
+}
+
+.stocks__item:first-child p {
+  @media (max-width: $tablet) {
+    max-width: 153px;
   }
 }
 

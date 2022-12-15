@@ -87,7 +87,7 @@
   }
 }
 
-.games__date {
+.games__item time {
   display: flex;
   align-items: center;
   width: max-content;
@@ -103,7 +103,7 @@
   }
 }
 
-.games__date span {
+.games__item time > span {
   width: 37px;
   margin-left: 7px;
 
@@ -117,7 +117,7 @@
   }
 }
 
-.games__text {
+.games__content p {
   margin: 0;
   margin-bottom: 44px;
 

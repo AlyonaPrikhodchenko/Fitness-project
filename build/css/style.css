@@ -1996,7 +1996,7 @@ button,
   color: #102654;
 }
 
-.tabs__number {
+.tabs__card span {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
@@ -2010,7 +2010,7 @@ button,
   color: #102654;
 }
 
-.tabs__price {
+.tabs__card b {
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -2033,7 +2033,7 @@ button,
   color: #103aae;
 }
 
-.tabs__price::before {
+.tabs__card b::before {
   content: attr(data-parent);
   position: absolute;
   top: -60%;
@@ -2047,7 +2047,7 @@ button,
   color: #e8e8e8;
 }
 
-.tabs__price::after {
+.tabs__card b::after {
   content: "";
   display: inline-block;
   width: 30px;
@@ -2142,7 +2142,7 @@ button,
   color: #ffffff;
 }
 
-.games__date {
+.games__item time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2162,7 +2162,7 @@ button,
   color: #ffffff;
 }
 
-.games__date span {
+.games__item time > span {
   width: 37px;
   margin-left: 7px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2173,7 +2173,7 @@ button,
   color: #ffffff;
 }
 
-.games__text {
+.games__content p {
   margin: 0;
   margin-bottom: 44px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2345,7 +2345,7 @@ button,
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.card-trainer__img {
+.card-trainer__image img {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
@@ -2383,7 +2383,7 @@ button,
   color: #ffffff;
 }
 
-.card-trainer__category {
+.card-trainer__content span {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 30px;
@@ -2404,7 +2404,7 @@ button,
   max-width: 160px;
 }
 
-.card-trainer__item {
+.card-trainer__list li {
   position: relative;
   padding-left: 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2415,7 +2415,7 @@ button,
   color: #ffffff;
 }
 
-.card-trainer__item::before {
+.card-trainer__list li::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2656,7 +2656,7 @@ button,
   margin-bottom: 20px;
 }
 
-.stocks__date {
+.stocks__price-wrapper dt {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -2665,7 +2665,7 @@ button,
   color: #ffffff;
 }
 
-.stocks__price {
+.stocks__price-wrapper dd {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 70px;
@@ -2675,7 +2675,7 @@ button,
   color: #ffffff;
 }
 
-.stocks__text {
+.stocks__content p {
   margin: 0;
   margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2720,7 +2720,7 @@ button,
   flex-shrink: 0;
 }
 
-.stocks__img {
+.stocks__image img {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
@@ -2767,7 +2767,7 @@ button,
   margin-bottom: 40px;
 }
 
-.stocks__item-title {
+.stocks__item h3 {
   margin: 0;
   margin-bottom: 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2778,7 +2778,7 @@ button,
   color: #1c3374;
 }
 
-.stocks__item-text {
+.stocks__item p {
   margin: 0;
   margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2894,7 +2894,7 @@ button,
   overflow: hidden;
 }
 
-.slider__img {
+.slider__image img {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 0 0;
@@ -2903,7 +2903,7 @@ button,
   height: 100%;
 }
 
-.slider__author {
+.slider__card cite {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 10px;
@@ -2915,7 +2915,7 @@ button,
   color: #ffffff;
 }
 
-.slider__review {
+.slider__card blockquote {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -3548,7 +3548,7 @@ button,
     color: #ffffff;
   }
 
-  .games__date {
+  .games__item time {
     padding-top: 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 24px;
@@ -3558,7 +3558,7 @@ button,
     color: #ffffff;
   }
 
-  .games__date span {
+  .games__item time > span {
     width: 26px;
     margin-left: 2px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -3569,7 +3569,7 @@ button,
     color: #ffffff;
   }
 
-  .games__text {
+  .games__content p {
     margin-bottom: 30px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 12px;
@@ -3618,7 +3618,7 @@ button,
     height: 38vw;
   }
 
-  .card-trainer__img {
+  .card-trainer__image img {
     height: 38vw;
     max-height: 38vw;
   }
@@ -3773,11 +3773,11 @@ button,
     margin-bottom: 0;
   }
 
-  .stocks__item-text {
+  .stocks__item p {
     line-height: 20px;
   }
 
-  .stocks__item-text--free {
+  .stocks__item:first-child p {
     max-width: 153px;
   }
 
@@ -4080,11 +4080,11 @@ button,
     color: #102654;
   }
 
-  .tabs__number {
+  .tabs__card span {
     margin-bottom: 53px;
   }
 
-  .tabs__price {
+  .tabs__card b {
     margin-bottom: 30px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 48px;
@@ -4094,7 +4094,7 @@ button,
     color: #103aae;
   }
 
-  .tabs__price::before {
+  .tabs__card b::before {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 80px;
     font-weight: 700;
@@ -4103,7 +4103,7 @@ button,
     color: #e8e8e8;
   }
 
-  .tabs__price::after {
+  .tabs__card b::after {
     width: 22px;
     background-size: contain;
   }
@@ -4164,7 +4164,7 @@ button,
     height: 86vw;
   }
 
-  .card-trainer__img {
+  .card-trainer__image img {
     height: 86vw;
     max-height: 86vw;
   }
@@ -4279,15 +4279,15 @@ button,
     margin-bottom: 13px;
   }
 
-  .stocks__date {
+  .stocks__price-wrapper dt {
     text-align: center;
   }
 
-  .stocks__price {
+  .stocks__price-wrapper dd {
     text-align: center;
   }
 
-  .stocks__text {
+  .stocks__content p {
     text-align: center;
     margin-bottom: 30px;
   }
@@ -4301,7 +4301,7 @@ button,
     height: 93.5vw;
   }
 
-  .stocks__img {
+  .stocks__image img {
     -o-object-position: 0 0;
     object-position: 0 0;
   }
@@ -4320,11 +4320,11 @@ button,
     padding: 35px 35px 39px;
   }
 
-  .stocks__item-title {
+  .stocks__item h3 {
     text-align: center;
   }
 
-  .stocks__item-text {
+  .stocks__item p {
     text-align: center;
   }
 
@@ -4371,7 +4371,7 @@ button,
     padding: 0;
   }
 
-  .slider__author {
+  .slider__card cite {
     margin-bottom: 0;
     margin-top: 7px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -4382,7 +4382,7 @@ button,
     color: #ffffff;
   }
 
-  .slider__review {
+  .slider__card blockquote {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
