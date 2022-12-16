@@ -1557,11 +1557,14 @@ button,
   display: flex;
 }
 
+.header__tel-wrapper {
+  width: 155px;
+  margin-left: auto;
+}
+
 .header__tel {
   display: block;
-  margin-left: auto;
   letter-spacing: 0.03em;
-  width: 155px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 600;
@@ -1762,6 +1765,7 @@ button,
   z-index: 1;
   display: block;
   width: 100%;
+  height: 100%;
   cursor: pointer;
 }
 
@@ -1787,6 +1791,10 @@ button,
 
 .video__link[href]:active {
   opacity: 0.5;
+}
+
+.video__image {
+  height: 100%;
 }
 
 .video__media {
@@ -2300,6 +2308,7 @@ button,
   width: 20.44%;
   max-height: 294px;
   height: 22vw;
+  margin-right: 40px;
   overflow: hidden;
 }
 
@@ -4004,7 +4013,7 @@ button,
 
   .gym__img {
     width: 100%;
-    height: 313px;
+    height: 98vw;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: 100% 0;
@@ -4015,7 +4024,11 @@ button,
   .gym__video {
     margin: 0 auto;
     width: 100%;
-    max-width: 320px;
+    height: 52vw;
+  }
+
+  .video__media {
+    height: 100%;
   }
 
   .title-name {
@@ -4516,5 +4529,11 @@ button,
     font-style: normal;
     line-height: 18px;
     color: #ffffff;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .subscription::before {
+    background-image: url("../img/background/requisite-gym@2x.png");
   }
 }

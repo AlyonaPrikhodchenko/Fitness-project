@@ -18,6 +18,12 @@
     transform: rotate(150deg);
   }
 
+  @media (min-resolution: 2dppx) {
+    &::before {
+      background-image: url("../img/background/requisite-gym@2x.png");
+    }
+  }
+
   @media (max-width: $tablet) {
     padding: 100px 0;
 

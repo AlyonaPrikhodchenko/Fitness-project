@@ -24,11 +24,14 @@
   }
 }
 
+.header__tel-wrapper {
+  width: 155px;
+  margin-left: auto;
+}
+
 .header__tel {
   display: block;
-  margin-left: auto;
   letter-spacing: 0.03em;
-  width: 155px;
 
   @include fontAlumni(600, 26px, 31px, $color-light-text);
 
