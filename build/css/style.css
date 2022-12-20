@@ -2994,9 +2994,9 @@ button,
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
-  z-index: 1;
-  width: 100%;
+  left: -99vw;
+  z-index: -10;
+  width: 100vw;
   height: 100%;
   background-color: #102654;
 }
@@ -3011,8 +3011,8 @@ button,
   content: "";
   position: absolute;
   top: -1px;
-  right: -100%;
-  width: 100%;
+  right: -100vw;
+  width: 100vw;
   height: 1px;
   background-color: #74819c;
 }
@@ -3031,6 +3031,7 @@ button,
   position: relative;
   padding-right: 63px;
   margin-right: 60px;
+  min-width: 233px;
 }
 
 .contacts__data::before {
@@ -3325,6 +3326,10 @@ button,
     font-style: normal;
     line-height: 29px;
     color: #ffffff;
+  }
+
+  .header__intro {
+    max-width: 678px;
   }
 
   .logo__img {
@@ -3918,6 +3923,10 @@ button,
     padding: 15px 0 78px;
   }
 
+  .header__tel-wrapper {
+    width: 115px;
+  }
+
   .header__tel {
     width: 115px;
     font-family: "Alumni Sans", "Arial", sans-serif;
@@ -3926,6 +3935,10 @@ button,
     font-style: normal;
     line-height: 24px;
     color: #ffffff;
+  }
+
+  .header__intro {
+    max-width: 290px;
   }
 
   .logo {

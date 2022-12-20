@@ -26,9 +26,9 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
-    z-index: 1;
-    width: 100%;
+    left: -99vw;
+    z-index: -10;
+    width: 100vw;
     height: 100%;
     background-color: $color-dark-text;
   }
@@ -55,8 +55,8 @@
     content: "";
     position: absolute;
     top: -1px;
-    right: -100%;
-    width: 100%;
+    right: -100vw;
+    width: 100vw;
     height: 1px;
     background-color: $color-input-border;
   }
@@ -97,6 +97,7 @@
   position: relative;
   padding-right: 63px;
   margin-right: 60px;
+  min-width: 233px;
 
   &::before {
     content: "";

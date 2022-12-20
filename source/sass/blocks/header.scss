@@ -27,6 +27,10 @@
 .header__tel-wrapper {
   width: 155px;
   margin-left: auto;
+
+  @media (max-width: $tel) {
+    width: 115px;
+  }
 }
 
 .header__tel {
@@ -59,5 +63,15 @@
     width: 115px;
 
     @include fontAlumni(700, 20px, 24px, $color-light-text);
+  }
+}
+
+.header__intro {
+  @media (max-width: $tablet) {
+    max-width: 678px;
+  }
+
+  @media (max-width: $tel) {
+    max-width: 290px;
   }
 }

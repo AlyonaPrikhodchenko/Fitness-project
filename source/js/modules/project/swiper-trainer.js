@@ -7,6 +7,8 @@ const initSwiperTrainer = (swiper) => {
         prevEl: '.swiper-button-prev',
       },
 
+      loop: true,
+
       breakpoints: {
         280: {
           slidesPerView: 1,
