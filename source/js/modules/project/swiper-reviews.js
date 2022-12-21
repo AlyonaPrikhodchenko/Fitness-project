@@ -3,9 +3,11 @@ const initSwiperReviews = (swiper) => {
     // eslint-disable-next-line
     new Swiper('#swiperReviews', {
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.reviews__swiper-button--next.swiper-button-next',
+        prevEl: '.reviews__swiper-button--prev.swiper-button-prev',
       },
+
+      loop: false,
 
       initialSlide: 0,
     });

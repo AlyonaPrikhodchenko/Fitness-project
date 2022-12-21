@@ -1,48 +1,16 @@
 .slider {
   position: relative;
   z-index: 0;
-  width: 57.93%;
+  width: 83.3%;
   margin: 0 auto;
-  padding: 0 56px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    right: 0;
-    width: 58px;
-    height: 100%;
-    background-color: #ffffff;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    width: 58px;
-    height: 100%;
-    background-color: #ffffff;
-  }
+  padding: 0;
 
   @media (max-width: $tablet) {
-    width: 678px;
+    width: 83.48%;
   }
 
   @media (max-width: $tel) {
-    max-width: 400px;
-    width: 100%;
-    padding: 32px;
-
-    &::before {
-      width: 32px;
-    }
-
-    &::after {
-      width: 32px;
-    }
+    max-width: 77.93%;
   }
 }
 
@@ -122,49 +90,5 @@
     width: 98%;
 
     @include fontRoboto(400, 16px, 22px, $color-light-text);
-  }
-}
-
-.slider__button {
-  border: none;
-  background-color: transparent;
-  width: 16px;
-  height: 32px;
-  padding: 0;
-  z-index: 6;
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    display: none;
-  }
-
-  &--prev {
-    left: 0;
-    top: 52%;
-  }
-
-  &--next {
-    right: 0;
-    top: 52%;
-    transform: rotate(-180deg);
-  }
-
-  &:focus-visible {
-    outline-offset: 2px;
-    outline: 1px solid $color-accent;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
-  @media (max-width: $tel) {
-    width: 10px;
-    height: 19px;
   }
 }

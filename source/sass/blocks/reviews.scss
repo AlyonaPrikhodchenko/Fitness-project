@@ -19,3 +19,62 @@
     margin-bottom: 9px;
   }
 }
+
+.reviews__swiper {
+  position: relative;
+  width: 672px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    width: 678px;
+  }
+
+  @media (max-width: $tel) {
+    width: 90.62%;
+    max-width: 400px;
+  }
+}
+
+.reviews__swiper-button {
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 32px;
+  padding: 0;
+  z-index: 6;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &--prev {
+    left: 0;
+    top: 52%;
+  }
+
+  &--next {
+    right: 0;
+    top: 52%;
+    transform: rotate(-180deg);
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 1px solid $color-accent;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tel) {
+    width: 10px;
+    height: 19px;
+  }
+}
